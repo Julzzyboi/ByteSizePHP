@@ -10,23 +10,25 @@
 </head>
 
 <body>
-    <div class="navigationBar">
-        <div class="navigationLogo">
-            <img src="images/navigationBarLogo.png" alt="Small ByteSize Logo">
+    <nav>
+        <div class="navigationBar">
+            <div class="navigationLogo">
+                <img src="images/navigationBarLogo.png" alt="Small ByteSize Logo">
+            </div>
+            <div class="navButton">
+                <ul class="navigationContents">
+                    <li><a href="#customer_home.html" style="color: #FF69A0;">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="userAccountNavigationSection">
+                <img src="images/userIcon.png" alt="User Icon">
+            </div>
         </div>
-        <nav>
-            <ul class="navigationContents">
-                <li><a href="#customer_home.html" style="color: #FF69A0;">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">FAQs</a></li>
-            </ul>
-        </nav>
-        <div class="userAccountNavigationSection">
-            <img src="images/userIcon.png" alt="User Icon">
-        </div>
-    </div>
+    </nav>
 
-    
+
     <div class="Banner-Wrapper">
         <div class="bannerSection">
           <img src="images/bannerBackground.png" class="bannerBg">
@@ -60,6 +62,20 @@
         span.innerHTML = '<i class="fa fa-star"></i>';
         starsContainer.appendChild(span);
     }
+
+    const Banner = document.querySelector('.Banner-Wrapper');
+
+
+    window.addEventListener('scroll', () => {
+  
+    const scrollPosition = window.scrollY;
+
+    const fadeOutPoint = 200; 
+    Banner.style.opacity = Math.max(1 - scrollPosition / fadeOutPoint, 0);
+});
+
+
+
 </script>
 
 </html>

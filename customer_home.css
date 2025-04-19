@@ -31,7 +31,7 @@ body{
     gap: 380px;
     height: 60px;
     width: 100%;
-    position: sticky;
+
 }
 
 .navigationLogo img{
@@ -39,7 +39,11 @@ body{
 }
 
 nav{
-    width: 650px;
+    border: 2px solid;
+    position: sticky;
+    top:0;
+    z-index: 10000;
+   
 }
 
 .userAccountNavigationSection img{
@@ -78,7 +82,7 @@ nav{
     border: 2px solid blue;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+
   }
   
   .bannerSection {

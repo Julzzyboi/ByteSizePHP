@@ -28,10 +28,13 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 380px;
+    gap: 600px;
     height: 60px;
     width: 100%;
+}
 
+.activeNav{
+    color: #FF69A0;
 }
 
 .navigationLogo img{
@@ -39,11 +42,9 @@ body{
 }
 
 nav{
-    border: 2px solid;
     position: sticky;
     top:0;
     z-index: 10000;
-   
 }
 
 .userAccountNavigationSection img{
@@ -55,8 +56,13 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 200px;
+    gap: 80px;
     list-style: none;
+    width:300px;
+}
+
+.navigationContents a{
+    width: 150px;
 }
 
 .navigationContents li, a{
@@ -74,12 +80,12 @@ nav{
 
 .navigationContents li, a:hover{
     font-size: 25px; 
+    color: #FF4287;
 }
 
 .Banner-Wrapper {
     position: relative;
     width: 100%;
-    border: 2px solid blue;
     display: flex;
     justify-content: center;
 
@@ -89,7 +95,6 @@ nav{
     position: relative;
     width: 100%;
     height: 100vh;
-    border: 2px solid red;
     overflow: hidden;
   }
   
@@ -124,7 +129,8 @@ nav{
   }
   
   .bannerLogo {
-    width: 300px;
+    width: 650px;
+    margin-top: -50px;
     height: auto;
     z-index: 2;
     position: absolute;

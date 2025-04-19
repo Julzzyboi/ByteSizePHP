@@ -104,10 +104,12 @@ nav{
 }
 
 /* STARS */
+
 .starsBanner{
     height: 92%;
     width: 100%;
     z-index: 1;
+    position: relative;
 }
 
 .starsBanner span{
@@ -117,176 +119,7 @@ nav{
 
 .starsBanner span i{
     color:#FF69A0;
-    font-size: 25px;
-}
-
-.starsBanner span:nth-child(1){
-    left: 3%;
-    animation-delay: 0.6s;
-    top: 48%;
-}
-
-.starsBanner span:nth-child(2){
-    left: 6%;
-    animation-delay: 2s;
-    top: 62%;
-}
-
-.starsBanner span:nth-child(3){
-    left: 9%;
-    animation-delay: 5s;
-    top: 35%;
-}
-
-.starsBanner span:nth-child(4){
-    left: 12%;
-    animation-delay: 4s;
-    top: 25%;
-}
-
-.starsBanner span:nth-child(5){
-    left: 12%;
-    animation-delay: 0.2s;
-    top: 70%;
-}
-
-.starsBanner span:nth-child(6){
-    left: 15%;
-    animation-delay: 0.5s;
-    top: 45%;
-}
-
-.starsBanner span:nth-child(7){
-    left: 18%;
-    animation-delay: 5s;
-    top: 30%;
-}
-
-.starsBanner span:nth-child(8){
-    left: 18%;
-    animation-delay: 5s;
-    top: 69%;
-}
-
-
-
-.starsBanner span:nth-child(11){
-    left: 33%;
-    animation-delay: 0.6s;
-    top: 23%;
-}
-
-.starsBanner span:nth-child(12){
-    left: 36%;
-    animation-delay: 2s;
-    top: 80%;
-}
-
-.starsBanner span:nth-child(13){
-    left: 39%;
-    animation-delay: 5s;
-    top: 17%;
-}
-
-.starsBanner span:nth-child(14){
-    left: 42%;
-    animation-delay: 4s;
-    top: 75%;
-}
-
-.starsBanner span:nth-child(15){
-    left: 45%;
-    animation-delay: 0.5s;
-    top: 13%;
-}
-
-.starsBanner span:nth-child(16){
-    left: 48%;
-    animation-delay: 5s;
-    top: 80%;
-}
-
-.starsBanner span:nth-child(17){
-    left: 51%;
-    animation-delay: 6s;
-    top: 65%;
-}
-
-.starsBanner span:nth-child(18){
-    left: 54%;
-    animation-delay: 3.5s;
-    top: 12%;
-}
-
-.starsBanner span:nth-child(19){
-    left: 57%;
-    animation-delay: 9s;
-    top: 75%;
-}
-
-.starsBanner span:nth-child(20){
-    left: 60%;
-    animation-delay: 3s;
-    top: 14%;
-}
-.starsBanner span:nth-child(21){
-    left: 63%;
-    animation-delay: 0.6s;
-    top: 5%;
-}
-
-.starsBanner span:nth-child(22){
-    left: 66%;
-    animation-delay: 2s;
-    top: 40%;
-}
-
-.starsBanner span:nth-child(23){
-    left: 69%;
-    animation-delay: 5s;
-    margin-top: 15%;
-}
-
-.starsBanner span:nth-child(24){
-    left: 72%;
-    animation-delay: 4s;
-    top: 67%;
-}
-
-.starsBanner span:nth-child(25){
-    left: 75%;
-    animation-delay: 0.5s;
-    top: 85%;
-}
-
-.starsBanner span:nth-child(26){
-    left: 78%;
-    animation-delay: 5s;
-    top: 23%;
-}
-
-.starsBanner span:nth-child(27){
-    left: 81%;
-    animation-delay: 6s;
-    top: 65%;
-}
-
-.starsBanner span:nth-child(28){
-    left: 84%;
-    animation-delay: 3.5s;
-    top: 12%;
-}
-
-.starsBanner span:nth-child(29){
-    left: 87%;
-    animation-delay: 9s;
-    top: 75%;
-}
-
-.starsBanner span:nth-child(30){
-    left: 90%;
-    animation-delay: 3s;
-    top: 14%;
+    font-size: 12px;
 }
 
 @keyframes animate{

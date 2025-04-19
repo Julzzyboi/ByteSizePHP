@@ -31,39 +31,32 @@
         <div class="bannerLogo">
             <img src="images/bannerLogo.png" alt="Banner Logo">
         </div>
-        <div class="starsBanner">
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
-            <span><i class="fa fa-star"></i></span>
+        <div class="starsBanner" id="starsBanner">
             <span><i class="fa fa-star"></i></span>
         </div>
     </div>
 </body>
+
+<script>
+    const starsContainer = document.getElementById('starsBanner');
+    const maxHeight = window.innerHeight;
+
+    for (let i = 0; i < 100; i++) {
+        const span = document.createElement('span');
+        span.classList.add('star');
+
+        // Left stays as a percentage
+        span.style.left = Math.random() * 100 + '%';
+
+        // Top between 60px and 100% of the page height
+        const topPx = 60 + Math.random() * (maxHeight - 60);
+        span.style.top = topPx + 'px';
+
+        span.style.animationDelay = (Math.random() * 10).toFixed(1) + 's';
+
+        span.innerHTML = '<i class="fa fa-star"></i>';
+        starsContainer.appendChild(span);
+    }
+</script>
 
 </html>

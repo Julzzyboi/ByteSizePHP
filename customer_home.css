@@ -1,3 +1,7 @@
+body{
+    background-color: #FBECA1;
+    height: 1000vh;
+}
 /* FONTS */
 @font-face {
     font-family: Back;
@@ -69,16 +73,21 @@ nav{
 }
 
 /* BANNER */
+.bannerSection{
+    position: relative;
+    border: 2px solid red;
+
+}
 .bannerSection img{
     margin-top: 60px;
     height: 92%;
     width: 100%;
     z-index: -1;
-    position: absolute;
+    position: relative;
 }
 
 .bannerLogo img{
-    position: relative;
+    position: absolute;
     height: 600px;
     width: 600px;
 }
@@ -110,10 +119,11 @@ nav{
     width: 100%;
     z-index: 1;
     position: relative;
+    border: 2px solid;
 }
 
 .starsBanner span{
-    position: fixed;
+   
     animation: animate 2s linear infinite;
 }
 

@@ -26,6 +26,8 @@
     justify-content: center;
     gap: 380px;
     height: 60px;
+    width: 100%;
+    position: fixed;
 }
 
 .navigationLogo img{
@@ -64,4 +66,38 @@ nav{
 
 .navigationContents li, a:hover{
     font-size: 25px; 
+}
+
+/* BANNER */
+.bannerSection img{
+    margin-top: 60px;
+    height: 92%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+.bannerLogo img{
+    position: relative;
+    height: 600px;
+    width: 600px;
+}
+
+.bannerLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    animation-name: zoomIn;
+    animation-duration: 1s;
+}
+
+@keyframes zoomIn{
+    from{
+        opacity: 0;
+        transform: scale3d(0.3,0.3,0.3)
+    }
+    50%{
+        opacity: 1;
+    }
 }

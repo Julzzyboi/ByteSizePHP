@@ -240,7 +240,7 @@ nav{
     border: 1px solid black;
   }
   .arrow:hover{
-    background-color: #91DB69;
+    background-color: #fcf950;
     transform: scale(1.2);
   }
   .arrow:active{
@@ -249,20 +249,20 @@ nav{
   .Product-1{
     width: 100%;
     height: 100%;
-    background-color: #fcc47b;
-    border: 2px solid black;
+    background-color: #FFC773;
+    border: 5px solid black;
   }
   .Product-2{
     width: 100%;
     height: 100%;
-    background-color: #fffeb0;
-    border: 2px solid black;
+    background-color: #FFF4BD;
+    border: 5px solid black;
   }
   .Product-3{
     width: 100%;
     height: 100%;
-    background-color: #af7a48;
-    border: 2px solid black;
+    background-color: #D3815F;
+    border: 5px solid black;
   }
 
 
@@ -291,7 +291,6 @@ nav{
       left 0.5s ease, 
       width 0.5s ease, 
       height 0.5s ease;
-     
   }  
 
   .Mascot[data-index="1"] {
@@ -300,7 +299,6 @@ nav{
     top: 20%;
     left: 5%;
     z-index: 3;
-    
   }
   
   .Mascot[data-index="2"] {
@@ -309,6 +307,7 @@ nav{
     top: 10px;
     left: 450px;
     z-index: 2;
+    filter:grayscale(100%) contrast(100%) blur(2px) brightness(0.6);
   }
   
   .Mascot[data-index="3"] {
@@ -317,59 +316,42 @@ nav{
     top: 420px;
     left: 450px;
     z-index: 1;
+    filter:grayscale(100%) contrast(100%) blur(2px) brightness(0.6);
   }
   .Cookie{
-    background-color: #fcc47b;
-    border: 2px solid black;
+    background-color: #FFC773;
+    border: 10px solid black;
     border-radius: 50px;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
-
+    display: flex;
   }
   .Pastillas{
-    background-color:#fffeb0 ;
-    border: 2px solid black;
+    background-color:#FFF4BD ;
+    border: 10px solid black;
     border-radius: 50px;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
 
   }
   .Graham{
-    background-color:#af7a48 ;
-    border: 2px solid black;
+    background-color:#D3815F ;
+    border: 10px solid black;
     border-radius: 50px;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
 
+  }
+
+  .Cookie img{
+    border-radius: 50px;
+  }
+  .Pastillas img{
+    border-radius: 50px;
+  }
+  .Graham img{
+    border-radius: 50px;
   }
   
-  /* .Cookie{
-    width: 400px;
-    height: 400px;
-    top:20%;
-    left:5%;
-    z-index: 3;
-    background-color: #fcc47b;
-    border: 2px solid black;
-    border-radius: 50px;
-  }
-  .Pastillas{
-    width: 200px;
-    height:200px;
-    top:10px;
-    left:450px;
-    z-index: 2;
-    background-color:#fffeb0 ;
-    border: 2px solid black;
-    border-radius: 50px;
-  }
-  .Graham{
-    width: 200px;
-    height:200px;
-    top:420px;
-    left: 450px;
-    z-index: 1;
-    background-color:#af7a48 ;
-    border: 2px solid black;
-    border-radius: 50px;
-  } */
 
 
 

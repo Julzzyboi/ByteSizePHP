@@ -1,7 +1,4 @@
-body{
-    background-color: #FBECA1;
-    height: 1000vh;
-}
+
 /* FONTS */
 @font-face {
     font-family: Back;
@@ -13,6 +10,10 @@ body{
     src: url(fonts/CandyBeans.ttf);
 }
 
+body{
+  background: linear-gradient(#fff7c6 21%, #ffc0cb 83%);
+  height: 300vh;
+}
 /* UNIVERSAL */
 *{
     box-sizing: border-box;
@@ -168,3 +169,207 @@ nav{
     100% { opacity: 0; }
   }
   
+  /* for dynamic product description */
+  .Product-Description-Main-Wrapper{
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid black; */
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+  }
+.Description-Wrap{
+/* border: 2px solid blue; */
+  width: 60%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+  .Product-Description{
+    position: relative;
+    width: 60%;
+    height: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .Description{
+    position: absolute;
+    opacity:0;
+    transition: opacity 0.5s ease-in-out;
+    width: 100%;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+
+  }
+  .Description.active{
+    opacity: 1;
+    position: relative;
+    animation: slideRight 0.7s forwards ease;
+  }
+
+  
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-15%);
+      opacity: 0;
+    }
+    75%{
+      opacity:0.75;
+    }
+    100% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  .arrow{
+    font-size:  2rem;
+    background: none;
+    border: none;
+    border-radius: 100px;
+    padding: 0px 15px;
+    cursor: pointer;
+    margin: 0;
+    transition: all ease-out 0.2s;
+    border: 1px solid black;
+  }
+  .arrow:hover{
+    background-color: #91DB69;
+    transform: scale(1.2);
+  }
+  .arrow:active{
+    transform: scale(0.95);
+  }
+  .Product-1{
+    width: 100%;
+    height: 100%;
+    background-color: #fcc47b;
+    border: 2px solid black;
+  }
+  .Product-2{
+    width: 100%;
+    height: 100%;
+    background-color: #fffeb0;
+    border: 2px solid black;
+  }
+  .Product-3{
+    width: 100%;
+    height: 100%;
+    background-color: #af7a48;
+    border: 2px solid black;
+  }
+
+
+  /* Mascots */
+  .Mascot-Wrap{
+    position: relative;
+    /* border: 2px solid purple; */
+    width:40%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  .Product-Mascots{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+    overflow:hidden;
+  }
+
+  .Mascot {
+    position: absolute;
+    transition: 
+      top 0.5s ease, 
+      left 0.5s ease, 
+      width 0.5s ease, 
+      height 0.5s ease;
+     
+  }  
+
+  .Mascot[data-index="1"] {
+    width: 400px;
+    height: 400px;
+    top: 20%;
+    left: 5%;
+    z-index: 3;
+    
+  }
+  
+  .Mascot[data-index="2"] {
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 450px;
+    z-index: 2;
+  }
+  
+  .Mascot[data-index="3"] {
+    width: 200px;
+    height: 200px;
+    top: 420px;
+    left: 450px;
+    z-index: 1;
+  }
+  .Cookie{
+    background-color: #fcc47b;
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+
+  }
+  .Pastillas{
+    background-color:#fffeb0 ;
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+
+  }
+  .Graham{
+    background-color:#af7a48 ;
+    border: 2px solid black;
+    border-radius: 50px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+
+  }
+  
+  /* .Cookie{
+    width: 400px;
+    height: 400px;
+    top:20%;
+    left:5%;
+    z-index: 3;
+    background-color: #fcc47b;
+    border: 2px solid black;
+    border-radius: 50px;
+  }
+  .Pastillas{
+    width: 200px;
+    height:200px;
+    top:10px;
+    left:450px;
+    z-index: 2;
+    background-color:#fffeb0 ;
+    border: 2px solid black;
+    border-radius: 50px;
+  }
+  .Graham{
+    width: 200px;
+    height:200px;
+    top:420px;
+    left: 450px;
+    z-index: 1;
+    background-color:#af7a48 ;
+    border: 2px solid black;
+    border-radius: 50px;
+  } */
+
+
+

@@ -1,4 +1,3 @@
-
 /* FONTS */
 @font-face {
     font-family: Back;
@@ -12,7 +11,7 @@
 
 body{
   background: linear-gradient(#fff7c6 21%, #ffc0cb 83%);
-  height: 300vh;
+  height: auto;
 }
 /* UNIVERSAL */
 *{
@@ -82,6 +81,10 @@ nav{
 .navigationContents li, a:hover{
     font-size: 25px; 
     color: #FF4287;
+}
+
+main{
+  flex: 1;
 }
 
 .Banner-Wrapper {
@@ -205,12 +208,13 @@ nav{
     transition: opacity 0.5s ease-in-out;
     width: 100%;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
-
+    border-radius: 30px;
   }
+
   .Description.active{
     opacity: 1;
     position: relative;
-    animation: slideRight 0.7s forwards ease;
+    animation: slideRight 0.5s forwards ease-out;
   }
 
   
@@ -351,7 +355,18 @@ nav{
   .Graham img{
     border-radius: 50px;
   }
+
+
+  /* for footer */
+  footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    /* border: 2px solid black; */
+   background-color: #FBECA1;
+    overflow: hidden;
+    margin-top: 300px;
+  }
+
   
-
-
-

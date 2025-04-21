@@ -41,17 +41,9 @@
             
             <div class="starsBanner" id="starsBanner"></div>
         
+            <div class="bannerLogoAndQuote">
             <div class="bannerLogo">
               <img src="images/bannerLogo.png" alt="Banner Logo">
-            </div>
-
-            <div class="bannerMascots">
-              <img src="images/cookieTwo.png" alt="Cookie Mascot 2" class="cookieMascotLeft">
-              <img src="images/pastillasTwo.png" alt="Pastillas Mascot2" class="pastillasMascotLeft">
-              <img src="images/grahamThree.png" alt="Graham Balls Mascot 3" class="grahamMascotLeft">
-              <img src="images/pastillasOne.png" alt="Pastillas Mascot 1" class="pastillasMascotRight">
-              <img src="images/grahamTwo.png" alt="Graham Balls Mascot 2" class="grahamMascotRight">
-              <img src="images/cookieThree.png" alt="Cookie Mascot 2" class="cookieMascotRight">
             </div>
 
             <div class="bannerQuote">
@@ -64,6 +56,17 @@
                 <span>smiles</span>
               </div>
             </div>
+          </div>
+
+            <div class="bannerMascots">
+              <img src="images/cookieTwo.png" alt="Cookie Mascot 2" class="cookieMascotLeft">
+              <img src="images/pastillasTwo.png" alt="Pastillas Mascot2" class="pastillasMascotLeft">
+              <img src="images/grahamThree.png" alt="Graham Balls Mascot 3" class="grahamMascotLeft">
+              <img src="images/pastillasOne.png" alt="Pastillas Mascot 1" class="pastillasMascotRight">
+              <img src="images/grahamTwo.png" alt="Graham Balls Mascot 2" class="grahamMascotRight">
+              <img src="images/cookieThree.png" alt="Cookie Mascot 2" class="cookieMascotRight">
+            </div>
+
           </div>
         </div>
 
@@ -106,7 +109,7 @@
 
         <div class="allFacts">
         <div class="factOneContainer">
-          <img>
+          <img src="images/cookieTwo.png" alt="Cookie Mascot 2" class="factOneMascot">
           <div class="factOne">
             <img src="images/factOnePicture.png" alt="Files">
             <p class="triviaTitle">From Syntax to Snacks</p>
@@ -115,7 +118,7 @@
         </div>
 
         <div class="factTwoContainer">
-          <img>
+          <img src="images/pastillasOne.png" alt="Pastillas Mascot 2" class="factTwoMascot">
           <div class="factTwo">
             <img src="images/factTwoPicture.png" alt="Partnership">
             <p class="triviaTitle">Delightful Partnerships</p>
@@ -124,7 +127,7 @@
         </div>
 
         <div class="factThreeContainer">
-          <img>
+          <img src="images/grahamThree.png" alt="Graham Mascot 3" class="factThreeMascot">
           <div class="factThree">
             <img src="images/factThreePicture.png" alt="Packages">
             <p class="triviaTitle">100 packs, 100 smiles</p>
@@ -133,7 +136,9 @@
         </div>
 
         <div class="factFourContainer">
-          <img>
+          <img src="images/cookieThree.png" alt="Cookie Mascot 3" class="factFourMascotOne">
+          <img src="images/pastillasTwo.png" alt="Pastillas Mascot 2" class="factFourMascotTwo">
+          <img src="images/grahamTwo.png" alt="Graham Mascot 2" class="factFourMascotThree">
           <div class="factFour">
             <img src="images/factFourPicture.png" alt="Japan, Australia, Canada Flag">
             <p class="triviaTitle">ByteSize Goes Global</p>
@@ -224,7 +229,7 @@
 
     window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
-    const fadeOutPoint = 400; 
+    const fadeOutPoint = 300; 
     Banner.style.opacity = Math.max(1 - scrollPosition   / fadeOutPoint, 0);
     });
 

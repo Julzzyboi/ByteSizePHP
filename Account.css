@@ -25,8 +25,8 @@ body{
 }
 
 .Main-Container{
-    background-color:#FFD5DC ;
-    /* background-color:#FFF8E9 ; */
+    /* background-color:#FFD5DC ; */
+    background-color:#FFF8E9 ;
     border: 3px solid black;
     position: relative;
     width:800px;
@@ -34,7 +34,7 @@ body{
     display: flex ;
     justify-content: space-between;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
-    overflow:hidden;  /*pancheck lang*/
+    overflow: hidden;  /*pancheck lang*/
 }
 .Logo-Container{
     background-color:#FFD5DC ;
@@ -44,22 +44,25 @@ body{
     align-items: center;
     transition: transform 0.6s ease-in-out;
     z-index: 5;
-    border-radius: 0px 50px 50px 0px;
+     /*pancheck lang*/
+    
 }
 .Form-Container{
 
     width: 50%;
     height: 100%;
     display: flex;
-    overflow: visible;
     transition: all 0.6s ease-in-out;
+    justify-content: space-around;
 }
+
 .Account-Logo{
    
     width: 90%;
     height: 80%;
     display: flex;
     background-color:#FFD5DC ;
+ /*pancheck lang*/
 
    
 }
@@ -68,21 +71,28 @@ body{
     height: 100%;
 }
 .SignUp{
+    /* border: 3px solid greenyellow; */
+    /* position: relative; */
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 20px;
+    /* margin-right: 20px; */
+    padding-left: 100px;
+    padding-right: 30px;
+    
   
 }
 .Login{
+    /* border: 3px solid brown; */
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 60px;
+    padding-right: 40px;
    
 }
 
@@ -120,7 +130,7 @@ body{
         opacity:0.5;
     }
     100% {
-        transform: translateX(-190%);
+        transform: translateX(-200%);
         opacity: 1;
     }
 }
@@ -146,7 +156,7 @@ body{
         opacity:0.5;
     }
     100% {
-        transform: translateX(-10%);
+        transform: translateX(-7%);
         opacity: 1;
     }
 }
@@ -197,14 +207,26 @@ body{
 /* form design */
 
 .SignUp > form{
-    border: 1px solid orangered;
-    margin-left: 90px;
+    /* border: 1px solid orangered; */
+    /* margin-left: 90px; */
+    /* margin-right: 20px; */
+    /* padding-left: 40px;
+    padding-right: 40px; */
     width: 100%;
     height: 100%;
+
 }
 .Login > form{
-    border: 1px solid rgb(38, 245, 42);
-    margin-right: 80px;
+    /* border: 1px solid rgb(38, 245, 42); */
+    /* margin-right: 90px;
+    margin-left: 20px; */
+    /* padding-left: 40px;
+    padding-right: 40px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 form{
@@ -243,6 +265,10 @@ p, span a {
     text-decoration: none;
     font-family:Candy ;
 }
+span a{
+    color:#8054ad;
+    font-weight: bold;
+}
 p{
     color:#2e222f;;
 }
@@ -259,10 +285,6 @@ input[type=number]::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
 .Gender{
     display: flex;
     align-items: center;
@@ -278,7 +300,7 @@ input[type=number] {
 button[type="submit"]{
     margin-top: 15px;
     width: 50%;
-    height: 2.5rem;
+    height: 2.3rem;
     font-family: Back;
     color:#2e222f;
     text-align: center;
@@ -292,4 +314,10 @@ button:hover{
 button:active{
     transform: scale(0.95);
     background-color: #FF9FC2;
+}
+
+.LogEmail, .LogPass{
+    width:100%;
+    height: 10px;
+    margin:20px;
 }

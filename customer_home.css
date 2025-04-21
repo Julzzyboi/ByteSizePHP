@@ -319,7 +319,7 @@ main{
 .Product-Description-Main-Wrapper{
     width: 100%;
     height: 100vh;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     position: relative;
     display: flex;
     /* justify-content: space-around; */
@@ -328,9 +328,9 @@ main{
   }
 
 .Description-Wrap{
-/* border: 2px solid blue; */
+border: 2px solid blue;
   width: 60%;
-  height: 70%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -340,6 +340,7 @@ main{
 }
 
   .Product-Description{
+    border: 1px solid rgb(137, 10, 10);
     position: relative;
     width: 60%;
     height: 80%;
@@ -418,9 +419,9 @@ main{
   /* Mascots */
   .Mascot-Wrap{
     position: relative;
-    /* border: 2px solid purple; */
+    border: 2px solid purple;
     width:40%;
-    height: 70%;
+    height: 100%;
     display: flex;
     align-items: center;
   }

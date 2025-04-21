@@ -306,7 +306,7 @@ main{
   
 .ourProductsHeader{
   font-family: Back;
-  font-size: 20px;
+  font-size: 70px;
   color: #91DB69;
   text-shadow: rgb(46, 34, 47) 4px 0px 0px, rgb(46, 34, 47) 3.87565px 0.989616px 0px, rgb(46, 34, 47) 3.51033px 1.9177px 0px, rgb(46, 34, 47) 2.92676px 2.72656px 0px, rgb(46, 34, 47) 2.16121px 3.36588px 0px, rgb(46, 34, 47) 1.26129px 3.79594px 0px, rgb(46, 34, 47) 0.282949px 3.98998px 0px, rgb(46, 34, 47) -0.712984px 3.93594px 0px, rgb(46, 34, 47) -1.66459px 3.63719px 0px, rgb(46, 34, 47) -2.51269px 3.11229px 0px, rgb(46, 34, 47) -3.20457px 2.39389px 0px, rgb(46, 34, 47) -3.69721px 1.52664px 0px, rgb(46, 34, 47) -3.95997px 0.56448px 0px, rgb(46, 34, 47) -3.97652px -0.432781px 0px, rgb(46, 34, 47) -3.74583px -1.40313px 0px, rgb(46, 34, 47) -3.28224px -2.28625px 0px, rgb(46, 34, 47) -2.61457px -3.02721px 0px, rgb(46, 34, 47) -1.78435px -3.57996px 0px, rgb(46, 34, 47) -0.843183px -3.91012px 0px, rgb(46, 34, 47) 0.150409px -3.99717px 0px, rgb(46, 34, 47) 1.13465px -3.8357px 0px, rgb(46, 34, 47) 2.04834px -3.43574px 0px, rgb(46, 34, 47) 2.83468px -2.82216px 0px, rgb(46, 34, 47) 3.44477px -2.03312px 0px, rgb(46, 34, 47) 3.84068px -1.11766px 0px, rgb(46, 34, 47) 3.9978px -0.132717px 0px;
   
@@ -499,6 +499,90 @@ main{
     border-radius: 50px;
   }
 
+  /* TRIVIA */
+
+.allFacts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.factOne, .factTwo, .factThree, .factFour{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border:#2E222F solid 6px;
+  border-radius: 30px;
+  width: 460px; 
+  height: 180px;
+}
+
+.triviaTitleHeader{
+  font-family: Back;
+  font-size: 45px;
+  color: #91DB69;
+  text-shadow: rgb(46, 34, 47) 4px 0px 0px, rgb(46, 34, 47) 3.87565px 0.989616px 0px, rgb(46, 34, 47) 3.51033px 1.9177px 0px, rgb(46, 34, 47) 2.92676px 2.72656px 0px, rgb(46, 34, 47) 2.16121px 3.36588px 0px, rgb(46, 34, 47) 1.26129px 3.79594px 0px, rgb(46, 34, 47) 0.282949px 3.98998px 0px, rgb(46, 34, 47) -0.712984px 3.93594px 0px, rgb(46, 34, 47) -1.66459px 3.63719px 0px, rgb(46, 34, 47) -2.51269px 3.11229px 0px, rgb(46, 34, 47) -3.20457px 2.39389px 0px, rgb(46, 34, 47) -3.69721px 1.52664px 0px, rgb(46, 34, 47) -3.95997px 0.56448px 0px, rgb(46, 34, 47) -3.97652px -0.432781px 0px, rgb(46, 34, 47) -3.74583px -1.40313px 0px, rgb(46, 34, 47) -3.28224px -2.28625px 0px, rgb(46, 34, 47) -2.61457px -3.02721px 0px, rgb(46, 34, 47) -1.78435px -3.57996px 0px, rgb(46, 34, 47) -0.843183px -3.91012px 0px, rgb(46, 34, 47) 0.150409px -3.99717px 0px, rgb(46, 34, 47) 1.13465px -3.8357px 0px, rgb(46, 34, 47) 2.04834px -3.43574px 0px, rgb(46, 34, 47) 2.83468px -2.82216px 0px, rgb(46, 34, 47) 3.44477px -2.03312px 0px, rgb(46, 34, 47) 3.84068px -1.11766px 0px, rgb(46, 34, 47) 3.9978px -0.132717px 0px;
+  
+  justify-self: center;
+}
+
+.triviaDescriptionHeader{
+  font-family: Candy;
+  font-size: 15px;
+  color: #2E222F;
+  justify-self: center;
+  text-align: center;
+
+  width: 900px;
+}
+
+.triviaTitle{
+  font-family: Back;
+  font-size: 20px;
+  color: #FF9FC2;
+  text-shadow: rgb(46, 34, 47) 3px 0px 0px, rgb(46, 34, 47) 2.83487px 0.981584px 0px, rgb(46, 34, 47) 2.35766px 1.85511px 0px, rgb(46, 34, 47) 1.62091px 2.52441px 0px, rgb(46, 34, 47) 0.705713px 2.91581px 0px, rgb(46, 34, 47) -0.287171px 2.98622px 0px, rgb(46, 34, 47) -1.24844px 2.72789px 0px, rgb(46, 34, 47) -2.07227px 2.16926px 0px, rgb(46, 34, 47) -2.66798px 1.37182px 0px, rgb(46, 34, 47) -2.96998px 0.42336px 0px, rgb(46, 34, 47) -2.94502px -0.571704px 0px, rgb(46, 34, 47) -2.59586px -1.50383px 0px, rgb(46, 34, 47) -1.96093px -2.27041px 0px, rgb(46, 34, 47) -1.11013px -2.78704px 0px, rgb(46, 34, 47) -0.137119px -2.99686px 0px, rgb(46, 34, 47) 0.850987px -2.87677px 0px, rgb(46, 34, 47) 1.74541px -2.43999px 0px, rgb(46, 34, 47) 2.44769px -1.73459px 0px, rgb(46, 34, 47) 2.88051px -0.838247px 0px;
+}
+
+.triviaDescription{
+  font-family: Candy;
+  font-size: 14px;
+  color: #2E222F;
+
+  width: 400px;
+  text-align: center;
+}
+
+.factOne img, .factTwo img, .factThree img, .factFour img{
+  height: 50px;
+  margin-bottom: 10px;
+  margin-top: -20px;
+}
+
+.factOne{
+  background-color: #FFF9E4;
+  margin-right: 480px
+}
+
+.factTwo{
+  background-color: #FFF9D4;
+  margin-left: 480px;
+  margin-top: -110px;
+}
+
+.factThree{
+  background-color: #FFF9D4;
+  margin-right: 550px;
+  margin-top: -90px;
+}
+
+.factFour{
+  background-color: #FFF9E4;
+  margin-left: 410px; 
+  margin-top: -110px;
+}
 
   /* for footer */
   footer{

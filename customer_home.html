@@ -68,6 +68,11 @@
         </div>
 
       <!-- Dynamic Product Description-->
+
+      <div class="ourProductsHeader">
+          <h1>Our Products</h1>
+      </div>
+      
       <div class="Product-Description-Main-Wrapper">
           <div class="Description-Wrap">
               <button class="arrow left">&#10094;</button>
@@ -176,7 +181,7 @@
 
     window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
-    const fadeOutPoint = 200; 
+    const fadeOutPoint = 400; 
     Banner.style.opacity = Math.max(1 - scrollPosition   / fadeOutPoint, 0);
     });
 

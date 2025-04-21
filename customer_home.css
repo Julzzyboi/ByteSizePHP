@@ -91,10 +91,12 @@ main{
 /* BANNER */
 
 .Banner-Wrapper {
-    position: relative;
+    position: absolute;
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 10;
+    margin-bottom: 2000px;
   }
   
   .bannerSection {
@@ -227,7 +229,6 @@ main{
   } 
 }
  
-
 .bannerQuote{
   left: 20%;
   top: 70%;
@@ -311,8 +312,8 @@ main{
     /* border: 2px solid black; */
     position: relative;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /* justify-content: space-around; */
+    /* align-items: center; */
     overflow: hidden;
   }
 

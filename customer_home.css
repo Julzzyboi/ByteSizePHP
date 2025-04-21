@@ -44,6 +44,8 @@ body{
 nav{
     position: sticky;
     top:0;
+    overflow: hidden;
+    z-index: 100;
 }
 
 .userAccountNavigationSection img{

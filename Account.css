@@ -8,9 +8,153 @@ body{
     background: linear-gradient(#fff7c6 21%, #ffc0cb 83%);
     height: 100vh;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Main-Container{
-    border: 2px solid black;
+    background-color:#FFF8E9 ;
+    border: 3px solid black;
     position: relative;
+    width:800px;
+    height: 500px;
+    display: flex ;
+    justify-content: space-between;
+    overflow:visible;  /*pancheck lang*/
+}
+.Logo-Container{
+    background-color:#FFD5DC ;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease-in-out;
+    z-index: 5;
+    border-radius: 0px 50px 50px 0px;
+    border: 2px solid black;
+}
+.Form-Container{
+    border: 1px solid orange;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    overflow: visible;
+    transition: all 0.6s ease-in-out;
+}
+.Account-Logo{
+    /* border:1px solid red; */
+    width: 90%;
+    height: 80%;
+    display: flex;
+    background-color:#FFD5DC ;
+
+   
+}
+.Account-Logo img{
+    width: 100%;
+    height: 100%;
+}
+.SignUp{
+    border:1px solid blue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Login{
+    border:1px solid green;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SignUp, .Login {
+    background-color:#FFF8E9 ;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+/* Default: SignUp is visible */
+.Main-Container .Form-Container {
+    transform: translateX(0%);
+}
+
+/* When switching to login */
+.Main-Container.Login-mode .Form-Container {
+    animation: Login 0.6s ease-in-out forwards;
+}
+
+@keyframes Login {
+    0% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-200%);
+        opacity: 1;
+    }
+}
+/* SignUp slide-back */
+.Main-Container:not(.Login-mode) .Form-Container {
+    animation: SignUpReverse 0.6s ease-in-out forwards;
+}
+
+@keyframes SignUpReverse {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+
+/* Logo Sync Switch */
+.Main-Container.Login-mode .Logo-Container {
+    animation: SlideLogo 0.6s ease-in-out forwards;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* When showing SignUp again */
+.Main-Container:not(.Login-mode) .Logo-Container {
+    animation: ResetLogo 0.6s ease-in-out forwards;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/* Logo movement right */
+@keyframes SlideLogo {
+    0% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+}
+
+/* Logo reset to original position */
+@keyframes ResetLogo {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }

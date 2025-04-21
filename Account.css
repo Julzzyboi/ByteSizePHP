@@ -1,3 +1,14 @@
+/* FONTS */
+@font-face {
+    font-family: Back;
+    src: url(fonts/Backso.ttf);
+}
+
+@font-face {
+    font-family: Candy;
+    src: url(fonts/CandyBeans.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -22,6 +33,7 @@ body{
     height: 500px;
     display: flex ;
     justify-content: space-between;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
     overflow:hidden;  /*pancheck lang*/
 }
 .Logo-Container{
@@ -61,6 +73,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 20px;
   
 }
 .Login{
@@ -69,16 +82,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: 20px;
    
 }
-.SignUp > form{
-    border: 1px solid orangered;
-    margin-left: 80px;
-}
-.Login > form{
-    border: 1px solid rgb(38, 245, 42);
-    margin-right: 80px;
-}
+
 
 
 .SignUp, .Login {
@@ -147,7 +154,7 @@ body{
 
 /* Logo Sync Switch */
 .Main-Container.Login-mode .Logo-Container {
-    animation: SlideLogo 0.6s ease-in-out forwards;
+    animation: logoRight 0.5s ease-in-out forwards;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     border-left: 3px solid black;
@@ -156,7 +163,7 @@ body{
 
 /* When showing SignUp again */
 .Main-Container:not(.Login-mode) .Logo-Container {
-    animation: ResetLogo 0.7s ease-in-out forwards;
+    animation: logoLeft 0.5s ease-in-out forwards;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     border-right: 3px solid black;
@@ -164,9 +171,9 @@ body{
 }
 
 /* Logo movement right */
-@keyframes SlideLogo {
+@keyframes logoRight {
     0% {
-        transform: translateX(50%);
+        transform: translateX(0%);
         opacity: 0;
     }
     100% {
@@ -176,7 +183,7 @@ body{
 }
 
 /* Logo reset to original position */
-@keyframes ResetLogo {
+@keyframes logoLeft {
     0% {
         transform: translateX(100%);
         opacity: 0;
@@ -185,4 +192,104 @@ body{
         transform: translateX(0%);
         opacity: 1;
     }
+}
+
+/* form design */
+
+.SignUp > form{
+    border: 1px solid orangered;
+    margin-left: 90px;
+    width: 100%;
+    height: 100%;
+}
+.Login > form{
+    border: 1px solid rgb(38, 245, 42);
+    margin-right: 80px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    /* gap: 20px; */
+}
+form .Title{
+    font-family: Back;
+    color: #FF9FC2;
+    font-size: 40px;
+    text-shadow: rgb(46, 34, 47) 3px 0px 0px, rgb(46, 34, 47) 2.83487px 0.981584px 0px, rgb(46, 34, 47) 2.35766px 1.85511px 0px, rgb(46, 34, 47) 1.62091px 2.52441px 0px, rgb(46, 34, 47) 0.705713px 2.91581px 0px, rgb(46, 34, 47) -0.287171px 2.98622px 0px, rgb(46, 34, 47) -1.24844px 2.72789px 0px, rgb(46, 34, 47) -2.07227px 2.16926px 0px, rgb(46, 34, 47) -2.66798px 1.37182px 0px, rgb(46, 34, 47) -2.96998px 0.42336px 0px, rgb(46, 34, 47) -2.94502px -0.571704px 0px, rgb(46, 34, 47) -2.59586px -1.50383px 0px, rgb(46, 34, 47) -1.96093px -2.27041px 0px, rgb(46, 34, 47) -1.11013px -2.78704px 0px, rgb(46, 34, 47) -0.137119px -2.99686px 0px, rgb(46, 34, 47) 0.850987px -2.87677px 0px, rgb(46, 34, 47) 1.74541px -2.43999px 0px, rgb(46, 34, 47) 2.44769px -1.73459px 0px, rgb(46, 34, 47) 2.88051px -0.838247px 0px;
+    margin-top: 10px;
+    display: flex;
+    justify-self: flex-start;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  border: 2px solid black;
+  background-color: white;
+}
+input::placeholder{
+    font-family: Candy;
+    color:black
+}
+p, span a {
+    text-decoration: none;
+    font-family:Candy ;
+}
+p{
+    color:#2e222f;;
+}
+.Fname , .Lname, .Email, .PhoneNum, 
+.Password, .ConfirmPass{
+    width:100%;
+    height: 10px;
+    margin:20px;
+}
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.Gender{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 1.1rem;
+    font-family: Candy;
+    color:#2e222f;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button[type="submit"]{
+    margin-top: 15px;
+    width: 50%;
+    height: 2.5rem;
+    font-family: Back;
+    color:#2e222f;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+button:hover{
+    transform: scale(1.2) ;
+}
+button:active{
+    transform: scale(0.95);
+    background-color: #FF9FC2;
 }

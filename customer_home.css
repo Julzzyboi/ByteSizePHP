@@ -136,8 +136,8 @@ main{
     position: absolute;
     z-index: 1;
     margin-left: 550px;
-    animation-name: zoomIn;
-    animation-duration: 3s;
+    animation-name: fadeIn;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
   }
   
@@ -146,16 +146,16 @@ main{
     height: auto;
   }
   
-  @keyframes zoomIn {
+  @keyframes fadeIn {
     from {
       opacity: 0;
     }
-    20% {
-      opacity: 1;
-      transform: rotate(0);
+    10% {
+      transform: scale3d(0.3,0.3,0.3);
     }
     to {
-      transform: rotate(360deg);
+      opacity: 1;
+      transform: scale(1);
     }
   }
 
@@ -174,6 +174,12 @@ main{
 .bannerMascots img{
   height: 200px;
   position: absolute;
+  visibility: hidden;
+
+  animation-name: fadeInMascot;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
 }
 
 .cookieMascotLeft{
@@ -204,6 +210,31 @@ main{
 .cookieMascotRight{
   margin-left: 1625px;
   margin-top: 620px;
+}
+
+@keyframes fadeInMascot {
+  0% {
+    opacity: 0;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+  } 
+}
+
+.bannerSection h1{
+  font-family: Back;
+  font-size: 50px;
+  color: #FF9FC2;
+  letter-spacing: 1px;
+  text-shadow: rgb(46, 34, 47) 3px 0px 0px, rgb(46, 34, 47) 2.83487px 0.981584px 0px, rgb(46, 34, 47) 2.35766px 1.85511px 0px, rgb(46, 34, 47) 1.62091px 2.52441px 0px, rgb(46, 34, 47) 0.705713px 2.91581px 0px, rgb(46, 34, 47) -0.287171px 2.98622px 0px, rgb(46, 34, 47) -1.24844px 2.72789px 0px, rgb(46, 34, 47) -2.07227px 2.16926px 0px, rgb(46, 34, 47) -2.66798px 1.37182px 0px, rgb(46, 34, 47) -2.96998px 0.42336px 0px, rgb(46, 34, 47) -2.94502px -0.571704px 0px, rgb(46, 34, 47) -2.59586px -1.50383px 0px, rgb(46, 34, 47) -1.96093px -2.27041px 0px, rgb(46, 34, 47) -1.11013px -2.78704px 0px, rgb(46, 34, 47) -0.137119px -2.99686px 0px, rgb(46, 34, 47) 0.850987px -2.87677px 0px, rgb(46, 34, 47) 1.74541px -2.43999px 0px, rgb(46, 34, 47) 2.44769px -1.73459px 0px, rgb(46, 34, 47) 2.88051px -0.838247px 0px;
+
+  justify-self: center;
+  margin-top: 700px;
+  position: absolute;
 }
   
   /* for dynamic product description */

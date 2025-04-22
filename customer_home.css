@@ -339,6 +339,7 @@ main{
 
 .Description-Wrap{
   /* border: 2px solid blue; */
+  width: 60%;
   width: 55%;
   height: 100%;
   display: flex;
@@ -353,7 +354,7 @@ main{
     /* border: 3px solid red; */
     position: relative;
     width: 600px;
-    height: 450px;
+    height: 500px;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -417,9 +418,7 @@ main{
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    padding-left: 35px;
   }
 
   .Product-2{
@@ -428,46 +427,86 @@ main{
     background-image: url("HomePage/pastillasDescriptionBackground.png");
     background-size: 400px;
     border: 8px solid #2E222F;
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
   }
+
   .Product-3{
     width: 100%;
     height: 100%;
     background-image: url("HomePage/grahamDescriptionBackground.png");
     background-size: 400px;
     border: 8px solid #2E222F;
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
   }
 
   .Product-1 img{
-    height: 200px;
-    width: 250px;
+    height: 280px;
+    width: 330px;
+  }
+
+  .Product-2 img{
+    height: 280px;
+    width: 310px;
+  }
+
+  .Product-3 img{
+    height: 280px;
+    width: 310px;
   }
 
   .Product-1 p{
     font-family: Candy;
-    font-size: 20px;
+    font-size: 23px;
     color: #2E222F;
     width: 500px;
     background-color: #FFC773;
-    text-align: center;
+    text-align: justify;
   }
 
-  .Product-1 button{
+  .Product-2 p{
+    font-family: Candy;
+    font-size: 23px;
+    color: #2E222F;
+    width: 500px;
+    background-color: #FFF4BD;
+    text-align: justify;
+  }
+
+  .Product-3 p{
+    font-family: Candy;
+    font-size: 23px;
+    color: #2E222F;
+    width: 500px;
+    background-color: #D3815F;
+    text-align: justify;
+  }
+
+  .Product-1 button, .Product-2 button, .Product-3 button{
     background-color: #91DB69;
     border: #2E222F solid 4px;
     border-radius: 20px;
 
     width: 150px;
-    height: 40px;
+    height: 50px;
 
     font-family: Candy;
-    font-size: 20px;
+    font-size: 25px;
     color: #2E222F;
+
+    margin-top: 30px;
   }
 
 
   /* Mascots */
   .Mascot-Wrap{
     position: relative;
+    /* border: 2px solid purple; */
     /* border: 2px solid violet; */
     width:40%;
     height: 100%;

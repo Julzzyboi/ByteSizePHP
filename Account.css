@@ -262,6 +262,13 @@ input::placeholder{
     font-family: Candy;
     color:black
 }
+input[type="text"],input[type="email"],
+input[type="number"],input[type="password"]
+{
+    font-family: Candy;
+    font-weight: none;
+
+}
 p, span a {
     text-decoration: none;
     font-family:Candy ;

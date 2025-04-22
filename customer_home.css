@@ -648,20 +648,20 @@ main{
     bottom: 0;
     width: 100%;
     height: 100%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
    background-color: #FBECA1;
-    overflow: hidden;
+    overflow: visible;
     margin-top: 300px;
     display: flex;
     flex-direction: column;
   }
   .wave{
     position: absolute;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
   .Footer-Content{
     position: relative;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     margin: 20px;
     justify-content: space-evenly;
@@ -671,7 +671,7 @@ main{
     position:relative ;
     width: 300px;
     height: auto;
-    border: 1px solid #2E222F;
+    /* border: 1px solid #2E222F; */
     /* background-color: green; */
   }
   .F-logo img{
@@ -682,7 +682,7 @@ main{
 
   .F-Details{
     position: relative;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     width: 50%;
     height: 300px;
     display: flex;
@@ -701,19 +701,100 @@ main{
   }
   .F-Details li{
     list-style: none;
-    font-weight: bolder;
+    font-family: Candy;
+    color: #2e222f;
     
   }
   .F-Details a{
-    font-family: none;
+    font-family: Back;
+    color: #1ebc73;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: rgb(46, 34, 47) 2px 0px 0px, rgb(46, 34, 47) 1.75517px 0.958851px 0px, rgb(46, 34, 47) 1.0806px 1.68294px 0px, rgb(46, 34, 47) 0.141474px 1.99499px 0px, rgb(46, 34, 47) -0.832294px 1.81859px 0px, rgb(46, 34, 47) -1.60229px 1.19694px 0px, rgb(46, 34, 47) -1.97998px 0.28224px 0px, rgb(46, 34, 47) -1.87291px -0.701566px 0px, rgb(46, 34, 47) -1.30729px -1.5136px 0px, rgb(46, 34, 47) -0.421592px -1.95506px 0px, rgb(46, 34, 47) 0.567324px -1.91785px 0px, rgb(46, 34, 47) 1.41734px -1.41108px 0px, rgb(46, 34, 47) 1.92034px -0.558831px 0px;
+
+  }
+  /* Right Side of footer */
+  .RightFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .F-Mascots{
+    display: flex;
+    flex-direction: row;
+  }
+  .M1,.M2,.M3{
+    position: absolute;
+    top:-130px;
+  }
+  .M1{
+    right:180px;
+  }
+  .M2{
+    right:80px;
+  }
+  .M3{
+    right:-30px;
+  }
+  .FM{
+    position: absolute;
+    /* border: 3px solid indigo; */
+    width: 200px;
+    height: 200px;
+  }
+  
+  .FM img{
+    width:100%;
+    height:100%;
   }
 
   .F-Socials{
-    border: 3px solid purple;
+    /* border: 3px solid purple; */
     display: flex;
     flex-direction: column;
     font-family: candy;
+    justify-content: flex-end;
   }
   .SocialIcons{
+    position: relative;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
   }
+.Contact{
+  font-size: 20px;
+}
+.Gmail{
+  width:auto;
+  height: 50px;
+  width: 4rem;
+  font-size: 15px;
+}
+.Gmail img{
+  /* border: 1px solid rgb(244, 19, 19); */
+  width: 4rem;
+  height: 100%;
+  padding:10px;
+}
+.Facebook{
+  width: auto;
+  height: 50px;
+  /* border: 1px solid black; */
+}
+.Facebook img{
+  /* border: 1px solid green; */
+  width: 4rem;
+  height: 100%;
+  padding:10px;
+}
+.Instagram{
+  width: auto;
+  height: 50px;
+  /* border: 1px solid black; */
+}
+.Instagram img{
+  /* border: 1px solid orange; */
+  width: 4rem;
+  height: 100%;
+}

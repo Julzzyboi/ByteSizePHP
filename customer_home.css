@@ -338,8 +338,8 @@ main{
   }
 
 .Description-Wrap{
-  border: 2px solid blue;
-  width: 60%;
+  /* border: 2px solid blue; */
+  width: 55%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -350,10 +350,10 @@ main{
 }
 
   .Product-Description{ 
-    border: 3px solid red;
+    /* border: 3px solid red; */
     position: relative;
-    width: 60%;
-    height: 80%;
+    width: 600px;
+    height: 450px;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -373,7 +373,6 @@ main{
     position: relative;
     animation: slideRight 0.5s forwards ease-out;
   }
-
   
   @keyframes slideRight {
     0% {
@@ -408,30 +407,68 @@ main{
   .arrow:active{
     transform: scale(0.95);
   }
+
   .Product-1{
     width: 100%;
     height: 100%;
-    background-color: #FFC773;
+    background-image: url("HomePage/cookieDescriptionBackground.png");
+    background-size: 400px;
     border: 8px solid #2E222F;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
+
   .Product-2{
     width: 100%;
     height: 100%;
-    background-color: #FFF4BD;
+    background-image: url("HomePage/pastillasDescriptionBackground.png");
+    background-size: 400px;
     border: 8px solid #2E222F;
   }
   .Product-3{
     width: 100%;
     height: 100%;
-    background-color: #D3815F;
+    background-image: url("HomePage/grahamDescriptionBackground.png");
+    background-size: 400px;
     border: 8px solid #2E222F;
+  }
+
+  .Product-1 img{
+    height: 200px;
+    width: 250px;
+  }
+
+  .Product-1 p{
+    font-family: Candy;
+    font-size: 20px;
+    color: #2E222F;
+    width: 500px;
+    background-color: #FFC773;
+    text-align: center;
+  }
+
+  .Product-1 button{
+    background-color: #91DB69;
+    border: #2E222F solid 4px;
+    border-radius: 20px;
+
+    width: 150px;
+    height: 40px;
+
+    font-family: Candy;
+    font-size: 20px;
+    color: #2E222F;
   }
 
 
   /* Mascots */
   .Mascot-Wrap{
     position: relative;
-    border: 2px solid purple;
+    /* border: 2px solid violet; */
     width:40%;
     height: 100%;
     display: flex;
@@ -456,27 +493,27 @@ main{
   }  
 
   .Mascot[data-index="1"] {
-    width: 250px;
-    height: 250px;
-    top: 28%;
+    width: 350px;
+    height: 350px;
+    top: 22%;
     left: 5%;
     z-index: 3;
   }
   
   .Mascot[data-index="2"] {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     top: 50px;
-    left: 300px;
+    left: 400px;
     z-index: 2;
     filter:grayscale(100%) contrast(100%) blur(2px) brightness(0.6);
   }
   
   .Mascot[data-index="3"] {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     top: 350px;
-    left: 300px;
+    left: 400px;
     z-index: 1;
     filter:grayscale(100%) contrast(100%) blur(2px) brightness(0.6);
   }

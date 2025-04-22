@@ -681,13 +681,25 @@ main{
   position: absolute;
   margin-top: -40px;
   margin-left: -50px;
-}
+
+  animation-name: bounce;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 1.2s;
+} 
 
 .factTwoMascot{
   position: absolute;
   height: 130px;
   margin-top: -170px;
   margin-left: 860px;
+
+  animation-name: bounce;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 1.2s;
 }
 
 .factThreeMascot{
@@ -695,6 +707,12 @@ main{
   height: 130px;
   margin-top: -100px;
   margin-left: -50px;
+
+  animation-name: bounce;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 1.2s;
 }
 
 .factFourMascotOne{
@@ -702,6 +720,12 @@ main{
   height: 100px;
   margin-top: 23px;
   margin-left: 545px;
+
+  animation-name: bounceTwo;
+  animation-delay: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 1.2s;
 }
 
 .factFourMascotTwo{
@@ -709,6 +733,12 @@ main{
   height: 100px;
   margin-top: 23px;
   margin-left: 600px;
+
+  animation-name: bounceTwo;
+  animation-delay: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 1.2s;
 }
 
 .factFourMascotThree{
@@ -716,6 +746,42 @@ main{
   height: 100px;
   margin-top: 23px;
   margin-left: 655px;
+
+  animation-name: bounceTwo;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 1.2s;
+}
+
+@keyframes bounce{
+  20%, 50%, 80%, to{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(-30px);
+  }
+  70%{
+    transform: translateY(-15px);
+  }
+  90%{
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes bounceTwo{
+  20%, 50%, 80%, to{
+    transform: translateY(0);
+  }
+  40%{
+    transform: translateY(-10px);
+  }
+  70%{
+    transform: translateY(-7px);
+  }
+  90%{
+    transform: translateY(-4px);
+  }
 }
 
   /* for footer */

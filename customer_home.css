@@ -339,11 +339,7 @@ main{
 
 .Description-Wrap{
   /* border: 2px solid blue; */
-<<<<<<< HEAD
-  width: 60%;
-=======
   width: 55%;
->>>>>>> b5bd8607119d6ae75abadec939f6f5e23148d5a2
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -472,11 +468,7 @@ main{
   /* Mascots */
   .Mascot-Wrap{
     position: relative;
-<<<<<<< HEAD
-    /* border: 2px solid purple; */
-=======
     /* border: 2px solid violet; */
->>>>>>> b5bd8607119d6ae75abadec939f6f5e23148d5a2
     width:40%;
     height: 100%;
     display: flex;

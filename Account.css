@@ -329,3 +329,17 @@ button:active{
     height: 10px;
     margin:20px;
 }
+.error-message{
+    font-size: 5px;
+    color: #b73131;
+    margin-left: 179px;
+    display: flex;
+    /* margin-top: -12px; */
+    /* margin-bottom: 10px; */
+
+    text-shadow: 
+        0 0 5px #970000, 
+        0 0 10px #970000,
+        0 0 15px #970000,
+        0 0 20px #970000;
+}

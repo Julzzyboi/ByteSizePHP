@@ -12,6 +12,7 @@
 body{
   background: linear-gradient(#fff7c6 21%, #ffc0cb 83%);
   height: auto;
+  overflow-x: hidden;
 }
 /* UNIVERSAL */
 *{
@@ -800,8 +801,8 @@ main{
   align-items: center;
   justify-content: center;
 
-  background-color: #FFF9D4;
-  border: #2E222F 8px solid;
+  /* background-color: #FFF9D4;
+  border: #2E222F 8px solid; */
   border-radius: 40px;
 
   width: 550px; 
@@ -859,6 +860,7 @@ main{
   justify-content: center;
   gap: 100px;
   margin-top: 120px; 
+  margin-bottom: 150px;
 }
 
 .visionPicture{
@@ -888,8 +890,8 @@ main{
   align-items: center;
   justify-content: center;
 
-  background-color: #FFF9D4;
-  border: #2E222F 8px solid;
+  /* background-color: #FFF9D4; */
+  /* border: #2E222F 8px solid; */
   border-radius: 40px;
 
   width: 550px; 
@@ -902,9 +904,8 @@ main{
     width: 100%;
     height: 100%;
     /* border: 2px solid black; */
-   background-color: #FBECA1;
-    overflow: visible;
-    margin-top: 300px;
+    background: linear-gradient(180deg,rgba(255, 192, 203, 1) 0%, rgba(255, 247, 198, 1) 4%);
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
   }

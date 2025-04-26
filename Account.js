@@ -1,59 +1,100 @@
 
-function validateForm(event){
+function validateForm(event) {
     event.preventDefault();
-    
-    var fname = document.getElementById("Fname").value;
-    var lname = document.getElementById("Lname").value;
-    var Email = document.getElementById("email").value;
-    var PhoneNum = document.getElementById("Phone").value;
-    var Gender = document.querySelector('input[name="Gender"]:checked');
-    var Password = document.getElementById("password").value;
-    var Cpass = document.getElementById("Cpass").value;
-
-    var errorFname = document.getElementById("errorFname");
-    var errorLname = document.getElementById("errorLname");
-    var errorEmail = document.getElementById("errorEmail");
-    var errorPhone = document.getElementById("errorPhone");
-    var errorGender = document.getElementById("errorGender");
-    var errorPassword = document.getElementById("errorPassword");
-    var errorCpass = document.getElementById("errorCpass");
-
-
-
-    // Clearing previous errors sa mga input
-    errorFname.innerText = "";
-    errorLname.innerText = "";
-    errorEmail.innerText = "";
-    errorPhone.innerText = "";
-    errorGender.innerText = "";
-    errorPassword.innerText = "";
-
-    let IsValid = true;
-
-    if(fname === ""){
-        IsValid = false;
-        errorFname.innerText = "First name is required.";
-    }else if (lname === "") {
-        errorLname.innerText = "Last name is required.";
-        IsValid = false;
-    }else if (Email === "") {
-        errorEmail.innerText = "Email Address is required.";
-        IsValid = false;
-    }else if (PhoneNum === "") {
-        errorPhone.innerText = "Phone Number is required.";
-        IsValid = false;
-    }else if (!Gender) {
-        errorGender.innerText = "Please select your gender.";
-        IsValid = false;
-    }else if (Password === "") {
-        errorassword.innerText = "Password is required.";
-        IsValid = false;
-    }else if (Cpass === "") {
-        errorCpass.innerText = "Password is not matched.";
-        IsValid = false;
+  
+    const form = event.target;
+  
+    const fname = document.getElementById("Fname");
+    const lname = document.getElementById("Lname");
+    const email = document.getElementById("email");
+    const phone = document.getElementById("Phone");
+    const genderChecked = document.querySelector('input[name="Gender"]:checked');
+    const password = document.getElementById("password");
+    const cpass = document.getElementById("Cpass");
+  
+    let isValid = true;
+  
+    function showError(input, message) {
+      input.classList.add("input-error");
+      const errorSpan = document.getElementById("error" + input.id);
+      if (errorSpan) errorSpan.textContent = message;
+      isValid = false;
     }
-    else if (IsValid) {
-    document.getElementById("SignUp-Button").submit();
+  
+    function clearError(input) {
+      input.classList.remove("input-error");
+      const errorSpan = document.getElementById("error" + input.id);
+      if (errorSpan) errorSpan.textContent = "";
     }
-}
-
+  
+    // Validate all fields
+    if (fname.value.trim() === "") {
+      showError(fname, "First name is required.");
+    } else {
+      clearError(fname);
+    }
+  
+    if (lname.value.trim() === "") {
+      showError(lname, "Last name is required.");
+    } else {
+      clearError(lname);
+    }
+  
+    if (email.value.trim() === "") {
+      showError(email, "Email is required.");
+    } else {
+      clearError(email);
+    }
+  
+    if (phone.value.trim() === "") {
+      showError(phone, "Phone Number is required.");
+    } else {
+      clearError(phone);
+    }
+  
+    if (!genderChecked) {
+      document.getElementById("errorGender").textContent = "Please select your gender.";
+      isValid = false;
+    } else {
+      document.getElementById("errorGender").textContent = "";
+    }
+  
+    if (password.value.trim() === "") {
+      showError(password, "Password is required.");
+    } else if (!/^(?=.*[a-zA-Z])(?=.*\d)(?=.*[\W_]).{6,}$/.test(password.value)) {
+      showError(password, "Password must include letters, numbers, and special characters.");
+    } else {
+      clearError(password);
+    }
+  
+    if (cpass.value.trim() === "") {
+      showError(cpass, "Confirm Password is required.");
+    } else if (password.value !== cpass.value) {
+      showError(cpass, "Passwords do not match.");
+      cpass.classList.add("input-error");
+      password.classList.add("input-error");
+    } else {
+      clearError(cpass);
+    }
+  
+    if (isValid) form.submit();
+  }
+  
+  // Remove red borders and messages as user types
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("input").forEach(input => {
+      input.addEventListener("input", () => {
+        if (input.value.trim() !== "") {
+          input.classList.remove("input-error");
+          const errorSpan = document.getElementById("error" + input.id);
+          if (errorSpan) errorSpan.textContent = "";
+        }
+      });
+    });
+  
+    document.querySelectorAll('input[name="Gender"]').forEach(radio => {
+      radio.addEventListener("change", () => {
+        document.getElementById("errorGender").textContent = "";
+      });
+    });
+  });

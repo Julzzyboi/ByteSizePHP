@@ -942,8 +942,9 @@ main{
     display: flex;
     gap: 130px;
     padding: 20px;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    margin-top: 60px;
   }
 
   .F-Details ul{
@@ -951,6 +952,7 @@ main{
    flex-direction: column;
    gap:20px;
    margin-top: 20px;
+ 
     
   }
   .F-Details li{
